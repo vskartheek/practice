@@ -3,7 +3,7 @@ pipeline{
   stages{
     stage('fetch code'){
       steps{
-      echo 'code fetching'
+      git branch: 'main', url: 'https://github.com/vskartheek/practice.git'
       }
       }
   }

@@ -6,11 +6,7 @@ pipeline{
       git branch: 'main', url: 'https://github.com/vskartheek/practice.git'
           }
       }
-    stage('Install web and deploy'){
-      steps{
-            sh 'sh deplyment.sh'
-          }
-      }
+    
   }
 
 }
